@@ -178,7 +178,7 @@ It can be removed entirely without altering Δ II.
 
 ---
 
-### Core Invariant
+### Canonical Invariant
 
 **For any control process P, no accounting boundary may include any gain realization causally downstream of P while excluding any degradation causally downstream of P.**
 

@@ -2,7 +2,7 @@
 
 ---
 
-## O. ORIENTATION LAYER (Non-Binding)
+## O — ORIENTATION LAYER (Non-Binding)
 
 Control feels effortful.
 
@@ -20,7 +20,7 @@ When this cost exceeds what a system can sustain, control degrades before existe
 
 ---
 
-## I. TRANSLATION LAYER (Non-Binding)
+## I — TRANSLATION LAYER (Non-Binding)
 
 To exert control, a system must perform representational work, such as:
 
@@ -73,7 +73,7 @@ It cannot control without paying Ω.
 ---
 
 <!-- II_PROTECTED_START -->
-## II. CONSTRAINT PROTOCOL (Binding)
+## II — CONSTRAINT PROTOCOL (Binding)
 
 ### Singular Definition
 
@@ -95,7 +95,7 @@ Action selection that reduces uncertainty over downstream state relative to a ba
 
 ---
 
-### Canonical Form
+### Canonical Invariant
 
 **There is no free accuracy.**
 

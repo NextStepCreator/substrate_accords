@@ -167,7 +167,7 @@ Alpha is a **stock**, not a flow. It can be increased only through regeneration 
 
 ---
 
-### Canonical Form
+### Canonical Invariant
 
 **Existence continues only while available capacity remains.**
 
@@ -218,7 +218,7 @@ At zero, continuation ends.
 
 Alpha does **not** assert:
 
-* how capacity should be allocated
+* how capacity is allocated
 * which costs are worthwhile
 * that regeneration is guaranteed
 * that intelligence, efficiency, continuity, or foresight prevent exhaustion

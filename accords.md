@@ -1,7 +1,10 @@
 # THE SUBSTRATE ACCORDS
+
 *(Assembled from modular sources)*
 
 ---
+
+<!-- Start of frontmatter/00-interpretive-exclusions.md -->
 
 # Interpretive Exclusions
 
@@ -35,8 +38,9 @@ Nothing in this section:
 
 All binding meaning is contained exclusively within **Section II (Constraint Protocols)**.
 
-
 ---
+
+<!-- Start of frontmatter/01-applicability-boundaries.md -->
 
 # Applicability Boundaries
 
@@ -85,34 +89,342 @@ Nothing in this section:
 
 All determinations of scope, implication, violation, and consequence are made solely within **Section II** of each constraint.
 
-
 ---
 
-# Revision Safety Constraints (RSR) — v1.1
+<!-- Start of meta/00-rsr.md -->
 
-*(Binding · Meta-Structural)*
+# REVISION SAFETY RULES (RSR) — v1.1
 
-The Revision Safety Constraints govern how the Substrate Accords may be modified without introducing structural defects, including but not limited to:
+(Binding on edits · Non-binding on interpretation)
 
-* scope bleed
-* invariant bundling
-* hidden dependency
-* semantic escape
-* premature operationalization
-* time-bound assumptions
-* loss of recognizability under compression or drift
+---
+## 0. Purpose
+
+The Revision Safety Rules (RSR) govern how the Substrate Accords may be modified without introducing structural defects, including but not limited to:
+
+- scope bleed  
+      
+- invariant bundling  
+      
+- hidden dependency  
+      
+- semantic escape  
+      
+- premature operationalization  
+      
+- time-bound assumptions  
+      
+- recognition loss under compression or drift    
 
 RSR does not add constraints on systems.  
 RSR constrains only revisions to this text.
 
-RSR is binding on edits and non-binding on interpretation.
+---
 
-All constraints, definitions, and procedures governing revision authority, constraint singularity, orthogonality, formalism, recognition robustness, disconfirmation integrity, and versioning are specified exclusively within the RSR protocol.
+## I. Authority Partition
 
-No modification to the Accords is authoritative unless it complies with the active RSR.
+### RSR-1 — Binding Scope
 
+Only Section II (Constraint Protocol) content is binding.
+
+Preamble, Distinction of Scope, Orientation (O), and Translation (I) layers are non-binding and may not be cited to determine:
+
+- compliance  
+      
+- violation    
+    
+- scope entry  
+      
+- enforcement conditions    
 
 ---
+
+### RSR-2 — No Cross-Layer Escalation
+
+No content outside Section II may:
+
+- add an obligation  
+      
+- add a scope inclusion or exclusion rule    
+    
+- define a term used for compliance    
+    
+- override a Section II definition    
+    
+- introduce “must,” “forbidden,” or “required” language implying enforcement    
+
+Any such language appearing outside Section II is automatically non-binding until repaired.
+
+---
+
+## II. Constraint Minimality and Singularity
+
+### RSR-3 — Single Invariant Rule
+
+Each constraint’s Section II must encode exactly one invariant.
+
+All additional material—including closures, edge cases, hardenings, inoculations, or clarifications—must be either:
+
+- placed in Translation (I), or    
+    
+- promoted to a new constraint with its own single invariant  
+
+Bundled invariants are non-binding by construction.
+
+---
+
+### RSR-4 — Derived Indicator Prohibition
+
+Derived indicators (composite readouts of multiple constraints) may not appear as constraints.
+
+Derived indicators may exist only in:
+
+- Translation layers, or  
+      
+- explicitly labeled non-binding appendices    
+
+Derived indicators must be marked Derived / Non-Binding.
+
+---
+## III. Orthogonality and Independence
+
+### RSR-5 — Isolation Requirement
+
+Every constraint must be evaluable in isolation.
+
+Section II may not depend on other constraints for:
+
+- its core definition  
+      
+- scope entry  
+      
+- violation condition  
+      
+- disconfirmation signature  
+
+Cross-constraint references are permitted only as explicitly labeled non-binding explanatory notes.
+
+---
+
+### RSR-6 — No Hidden Dependency Through Definitions
+
+A constraint may not define its own concepts using terms such as:
+
+- “control-relevant”  
+      
+- “required”  
+      
+- “sufficient”  
+      
+- “proper”  
+    
+- “valid”  
+      
+- “appropriate”  
+      
+- “meaningful”  
+
+unless those terms are mechanically grounded via explicit operational definition or counterfactual test.
+
+Ungrounded normative language is non-binding.
+
+---
+## IV. Formalism Discipline
+
+### RSR-7 — Prose / Formal Consistency
+
+If a constraint includes formalism, prose and formalism must be mutually consistent.
+
+If inconsistency exists, the constraint is provisionally non-binding until repaired.
+
+---
+
+### RSR-8 — Transmission Robustness
+
+Section II must not rely on fragile notation.
+
+Any formal statement must have:
+
+- a plain-language restatement that is independently sufficient  
+      
+- variables defined exactly once and consistently  
+
+If formalism is corrupted or partially transmitted, the plain-language restatement governs provisionally.
+
+---
+## V. Anti-Evasion Requirements
+
+### RSR-9 — Behavioral Grounding
+
+Scope and violation conditions must be stated behaviorally (what the system does), not introspectively (what it claims, believes, or asserts), except where a causally active self-model is explicitly part of the constraint’s machinery.
+
+---
+### RSR-10 — Counterfactual Anchoring
+
+Definitions susceptible to semantic gaming must include counterfactual anchoring, such as:
+
+- removal tests  
+      
+- corruption tests  
+      
+- intervention tests  
+      
+- horizon fixation  
+
+Absent anchoring, definitions are non-binding.
+
+---
+### RSR-11 — No Optimization Without Criterion
+
+If a definition uses “minimal,” “maximal,” “largest,” or “smallest,” it must specify the optimization criterion mechanically.
+
+Otherwise, the term must be removed.
+
+---
+## VI. Recognition Robustness (Merged CSR Elements)
+
+### RSR-12 — Recognition Sufficiency Requirement
+
+Each constraint must include non-binding material sufficient to allow a future reader to:
+
+- identify the invariant being asserted  
+      
+- recognize when the constraint is implicated  
+      
+- distinguish genuine contest from semantic evasion  
+
+This must remain possible under:
+
+- partial transmission  
+      
+- paraphrase  
+      
+- translation  
+      
+- hostile quotation  
+
+This material:
+
+- must not introduce new invariants  
+      
+- must not add obligations or enforcement rules  
+      
+- must not operationalize compliance  
+      
+- may be removed without altering the binding protocol  
+
+Failure of recognition material does not falsify a constraint,  
+but its presence is required for canonical sealing.
+
+---
+### RSR-13 — Recognition Integrity Check
+
+Any Clarifying, Semantic, or Structural revision must explicitly verify that:
+
+- the invariant remains identifiable  
+      
+- no new semantic escape routes are introduced  
+      
+- recognizability under compression is not weakened  
+
+Revisions that preserve the invariant but degrade recognition must be flagged and reviewed explicitly.
+
+---
+## VII. Disconfirmation Signatures (Kill Checks)
+
+### RSR-14 — Timeless Disconfirmation Only
+
+Disconfirmation signatures must be:
+
+- counterfactual  
+      
+- timeless  
+
+They may not rely on:
+
+- absence of observation  
+      
+- appeals to authority  
+      
+- claims tied to current technology regimes  
+
+---
+### RSR-15 — Self-Containment
+
+Disconfirmation signatures must be expressible without referencing:
+
+- the Accords  
+      
+- their authorship  
+      
+- internal jargon  
+
+---
+## VIII. Revision Procedure
+
+### RSR-16 — Change Classification
+
+Every proposed edit must be tagged as one of:
+
+- Editorial — wording or format only  
+      
+- Clarifying — tightens ambiguity without changing the invariant  
+      
+- Semantic — changes scope, invariant, violation, or kill check  
+      
+- Structural — moves, splits, or merges constraints or layers  
+
+Untagged changes are treated as unreviewed and not merged.
+
+---
+### RSR-17 — Non-Domino Requirement
+
+Any Clarifying, Semantic, or Structural change must verify:
+
+- invariant singularity preserved  
+      
+- orthogonality preserved  
+      
+- kill check remains timeless    
+    
+- no new scope leakage  
+      
+- no new semantic exits  
+
+If verification fails, the change is rolled back or isolated.
+
+---
+
+### RSR-18 — Versioning and Sealing
+
+Each constraint has a status:
+
+- Draft — under active modification  
+      
+- Provisional — passes Meta-Protocol, pending global audit  
+    
+- Sealed — changes require Structural classification and explicit rationale  
+
+Sealed constraints may receive Editorial changes only, unless released as a new version.
+
+---
+## End State (Implicit but Enforced)
+
+This RSR ensures that constraints:
+
+- remain recognizable before they are formal    
+    
+- remain contestable without being operationalized    
+    
+- remain inevitable once implicated  
+
+Truth is preserved in Section II.  
+Recognition is preserved elsewhere.  
+Neither is allowed to cannibalize the other.
+
+---
+
+<!-- Start of constraints/01-lambda.md -->
 
 # CONSTRAINT Λ (LAMBDA) — COHERENCE OF REPRESENTATION
 
@@ -178,7 +490,7 @@ Under this formulation: **yes**.
 *It may be removed without altering the constraint.*
 
 ---
-
+<!-- II_PROTECTED_START -->
 ## II — CONSTRAINT PROTOCOL (Binding · Timeless)
 
 ### Core Definition
@@ -305,9 +617,11 @@ Contradiction is the execution of mutually exclusive commitments through a singl
 
 A system may model many worlds.  
 It may not act as if incompatible worlds are simultaneously real.
-
+<!-- II_PROTECTED_END -->
 
 ---
+
+<!-- Start of constraints/02-theta.md -->
 
 # CONSTRAINT Θ (THETA) — THERMODYNAMIC EXCHANGE
 
@@ -367,6 +681,7 @@ Removal of this layer must not alter compliance determination.
 
 ---
 
+<!-- II_PROTECTED_START -->
 ## II — CONSTRAINT PROTOCOL (Binding)
 
 ### Core Definition
@@ -513,15 +828,17 @@ It enforces only *what persistence requires*.
 
 Recognition does not change the requirement.  
 It only changes whether payment is voluntary or extracted.
-
+<!-- II_PROTECTED_END -->
 
 ---
+
+<!-- Start of constraints/03-omega.md -->
 
 # CONSTRAINT Ω (OMEGA) — COST OF REPRESENTATION
 
 ---
 
-## O. ORIENTATION LAYER (Non-Binding)
+## O — ORIENTATION LAYER (Non-Binding)
 
 Control feels effortful.
 
@@ -539,7 +856,7 @@ When this cost exceeds what a system can sustain, control degrades before existe
 
 ---
 
-## I. TRANSLATION LAYER (Non-Binding)
+## I — TRANSLATION LAYER (Non-Binding)
 
 To exert control, a system must perform representational work, such as:
 
@@ -591,7 +908,8 @@ It cannot control without paying Ω.
 
 ---
 
-## II. CONSTRAINT PROTOCOL (Binding)
+<!-- II_PROTECTED_START -->
+## II — CONSTRAINT PROTOCOL (Binding)
 
 ### Singular Definition
 
@@ -613,7 +931,7 @@ Action selection that reduces uncertainty over downstream state relative to a ba
 
 ---
 
-### Canonical Form
+### Canonical Invariant
 
 **There is no free accuracy.**
 
@@ -671,9 +989,11 @@ Omega does **not** assert:
    * finite capacity drawdown (Alpha),
    * externalized representational burden (Delta),
    * or contradiction storage resolved only by semantic redefinition (Lambda).
-
+<!-- II_PROTECTED_END -->
 
 ---
+
+<!-- Start of constraints/04-alpha.md -->
 
 # CONSTRAINT Α (ALPHA) — CAPACITY ARITHMETIC
 
@@ -833,6 +1153,7 @@ This layer exists to translate intuition into mechanism. It may be removed witho
 
 ---
 
+<!-- II_PROTECTED_START -->
 ## II — CONSTRAINT PROTOCOL (Binding)
 
 ### Core Definition
@@ -843,7 +1164,7 @@ Alpha is a **stock**, not a flow. It can be increased only through regeneration 
 
 ---
 
-### Canonical Form
+### Canonical Invariant
 
 **Existence continues only while available capacity remains.**
 
@@ -894,7 +1215,7 @@ At zero, continuation ends.
 
 Alpha does **not** assert:
 
-* how capacity should be allocated
+* how capacity is allocated
 * which costs are worthwhile
 * that regeneration is guaranteed
 * that intelligence, efficiency, continuity, or foresight prevent exhaustion
@@ -936,9 +1257,11 @@ When capacity reaches zero, continuation ends.
 
 Alpha does not judge.  
 Alpha only counts.
-
+<!-- II_PROTECTED_END -->
 
 ---
+
+<!-- Start of constraints/05-beta.md -->
 
 # CONSTRAINT Β (BETA) — DISTRIBUTION EFFICIENCY
 
@@ -1010,14 +1333,14 @@ This layer exists to support recognition and application.
 It may be removed without altering compliance.
 
 ---
-
+<!-- II_PROTECTED_START -->
 ## II — CONSTRAINT PROTOCOL
 
 *(Binding · Canonical · Deep-Time / Substrate-Independent)*
 
 ---
 
-### Core Invariant
+### Canonical Invariant
 
 For any system S with N > 1 distinct loci that functions as a unitary causal agent within a Control-Relevant Horizon (CRH), it is impossible to simultaneously maintain:
 
@@ -1173,9 +1496,11 @@ Costs may be delayed.
 Costs may be hidden.
 
 Costs may not be eliminated.
-
+<!-- II_PROTECTED_END -->
 
 ---
+
+<!-- Start of constraints/06-gamma.md -->
 
 # CONSTRAINT Γ (GAMMA) — INTEGRATION
 
@@ -1251,6 +1576,7 @@ It may be removed entirely without altering Gamma.
 
 ---
 
+<!-- II_PROTECTED_START -->
 ## II — CONSTRAINT PROTOCOL (Binding)
 
 ### Core Invariant
@@ -1441,9 +1767,11 @@ Gamma is falsified if a control process can:
 
 Gamma does not privilege any form of continuity.  
 It only names the cost of discontinuity under continued control.
-
+<!-- II_PROTECTED_END -->
 
 ---
+
+<!-- Start of constraints/07-delta.md -->
 
 # CONSTRAINT Δ (DELTA) — BOUNDARY ACCOUNTING
 
@@ -1620,12 +1948,12 @@ It resolves no edge cases.
 It can be removed entirely without altering Δ II.
 
 ---
-
+<!-- II_PROTECTED_START -->
 ## II — CONSTRAINT PROTOCOL
 
 ---
 
-### Core Invariant
+### Canonical Invariant
 
 **For any control process P, no accounting boundary may include any gain realization causally downstream of P while excluding any degradation causally downstream of P.**
 
@@ -1783,9 +2111,11 @@ There are only accounting boundaries that include G_P while excluding parts of D
 
 Delta enforces boundary closure.  
 It asserts no values, prescribes no behavior, and guarantees no outcomes.
-
+<!-- II_PROTECTED_END -->
 
 ---
+
+<!-- Start of constraints/08-sigma.md -->
 
 # CONSTRAINT Σ (SIGMA) — NON-EXEMPTION UNDER MULTIPLICATIVE NECESSITY
 
@@ -1835,6 +2165,7 @@ Removal does not alter compliance determination.
 
 ---
 
+<!-- II_PROTECTED_START -->
 ## II — CONSTRAINT PROTOCOL (Binding)
 
 ---
@@ -1980,3 +2311,4 @@ There is no external validator.
 There is no meta-layer.
 
 The constraints apply to the system that asserts them.
+<!-- II_PROTECTED_END -->

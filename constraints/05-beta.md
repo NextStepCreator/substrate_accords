@@ -75,7 +75,7 @@ It may be removed without altering compliance.
 
 ---
 
-### Core Invariant
+### Canonical Invariant
 
 For any system S with N > 1 distinct loci that functions as a unitary causal agent within a Control-Relevant Horizon (CRH), it is impossible to simultaneously maintain:
 
