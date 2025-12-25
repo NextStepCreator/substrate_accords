@@ -1,0 +1,60 @@
+versions:
+  rsr: "1.1"
+  document: "1.1"
+
+assembly_order:
+  - frontmatter
+  - meta
+  - constraints
+
+constraints:
+  - id: lambda
+    file: constraints/01-lambda.md
+  - id: theta
+    file: constraints/02-theta.md
+  - id: omega
+    file: constraints/03-omega.md
+  - id: alpha
+    file: constraints/04-alpha.md
+  - id: beta
+    file: constraints/05-beta.md
+  - id: gamma
+    file: constraints/06-gamma.md
+  - id: delta
+    file: constraints/07-delta.md
+  - id: sigma
+    file: constraints/08-sigma.md
+
+required_headings:
+  constraint_file:
+    - "## O —"
+    - "## I —"
+    - "## II —"
+    - "### Canonical Invariant"
+    - "### Disconfirmation Signature"
+
+protected_markers:
+  start: "<!-- II_PROTECTED_START -->"
+  end: "<!-- II_PROTECTED_END -->"
+
+changelog:
+  file: "CHANGELOG.md"
+  require_no_semantic_change_line_if_rsr_unchanged: true
+  no_semantic_change_line: "No binding constraint semantics were altered in this release."
+  semantic_keywords:
+    - "binding"
+    - "invariant"
+    - "canonical invariant"
+    - "core definition"
+    - "failure condition"
+    - "disconfirmation"
+    - "kill check"
+    - "scope"
+    - "boundary"
+    - "applicability"
+    - "definition"
+    - "protocol"
+    - "tighten"
+    - "weaken"
+    - "strengthen"
+    - "clarify"

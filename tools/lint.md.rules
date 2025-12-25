@@ -1,0 +1,115 @@
+# Markdown Linting Rules for Substrate Accords
+
+## Purpose
+
+These rules ensure consistency, clarity, and structural integrity across all Accord documents.
+
+## Structural Rules
+
+### S1: Layer Integrity
+- Each constraint MUST contain exactly three sections: O, I, II
+- Layer O MUST be marked `(Non-Binding · Discardable)`
+- Layer I MUST be marked `(Non-Binding)` or `(Non-Binding · Optional/Removable)`
+- Layer II MUST be marked `(Binding)`
+
+### S2: Section Ordering
+- Within each constraint file:
+  1. Title (# CONSTRAINT X)
+  2. Layer O
+  3. Layer I
+  4. Layer II
+
+### S3: Required Sections (Layer II)
+Every Layer II MUST contain:
+- Core Definition or Singular Definition
+- Canonical Invariant or Canonical Form
+- Failure Condition
+- Disconfirmation Signature (Kill Check)
+- Boundary Clarification (Non-Binding)
+
+## Content Rules
+
+### C1: Binding Language
+- Layer II content MUST NOT use:
+  - "should", "ought", "recommend"
+  - First person ("I", "we")
+  - Imperative mood except in definitions
+- Layer II MUST use:
+  - Declarative statements
+  - Precise technical terms
+  - Formal logic where applicable
+
+### C2: Non-Binding Language
+- Layers O and I MAY use:
+  - Conversational tone
+  - Second person ("you")
+  - Examples and metaphors
+- Layers O and I MUST NOT:
+  - Introduce binding requirements
+  - Override Layer II definitions
+
+### C3: Cross-References
+- Cross-references to other constraints are permitted in Layer I only
+- Cross-references in Layer II are explanatory, never binding
+- Each constraint MUST be independently evaluable
+
+## Formatting Rules
+
+### F1: Headings
+- Use ATX-style headings (# ## ###)
+- Constraint titles: `# CONSTRAINT X (NAME) — DESCRIPTION`
+- Major sections: `## SECTION NAME`
+- Subsections: `### Subsection Name`
+
+### F2: Emphasis
+- Use **bold** for key terms on first definition
+- Use *italics* for subtle emphasis
+- Use `code` for technical variables/symbols
+
+### F3: Lists
+- Use `-` for unordered lists
+- Use `1.` only for ordered sequences
+- Maintain consistent indentation (2 or 4 spaces)
+
+### F4: Mathematical Notation
+- Inline math: single-line expressions only
+- Display math: use proper formatting with alignment
+- Define all variables before use
+
+## Validation Checklist
+
+Before committing any constraint file:
+
+- [ ] All three layers present
+- [ ] Layer markers correct
+- [ ] All required Layer II sections present
+- [ ] No binding language in Layers O/I
+- [ ] No cross-constraint dependencies in Layer II
+- [ ] Disconfirmation signature is genuinely testable
+- [ ] Canonical invariant is compression-robust
+- [ ] No spelling/grammar errors
+- [ ] Consistent terminology with other constraints
+- [ ] File assembles correctly via `assemble.py`
+
+## Error Severity
+
+**Critical** (Blocks assembly):
+- Missing Layer II
+- Malformed YAML/frontmatter
+- Syntax errors in formal logic
+
+**Major** (Fix before merge):
+- Missing required Layer II sections
+- Binding language in Layers O/I
+- Cross-constraint violations
+
+**Minor** (Fix when convenient):
+- Formatting inconsistencies
+- Style guide deviations
+- Missing emphasis
+
+## Notes
+
+These rules apply to constraint files only.
+Frontmatter and meta documents follow looser guidelines.
+When in doubt, prioritize clarity over strict adherence.
